@@ -1,5 +1,5 @@
-const calculateButton = document.getElementById('calculateButton');
 const resetButton = document.getElementById('resetButton');
+const calculateButton = document.getElementById('calculateButton');
 const totalQuantityElement = document.getElementById('totalQuantity');
 const totalMoneyElement = document.getElementById('totalMoney');
 

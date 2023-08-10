@@ -8,7 +8,7 @@ body {
 
 h1 {
     text-align: center;
-    padding: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
 }
 
 form {
@@ -47,8 +47,7 @@ form {
     color: cadetblue;
 }
 
-input,
-.total {
+input {
     font-size: 1.2rem;
     margin: 0.25rem 0rem;
 }
@@ -62,7 +61,7 @@ input {
 .total {
     font-size: 1.6rem;
     font-weight: 700;
-    padding: 1rem 0rem;
+    padding: 2rem 1rem 1rem 1rem;
     text-align: center;
 }
 
@@ -79,14 +78,41 @@ input {
 }
 
 .buttons {
-    margin-bottom: 2rem;
+    margin: 2rem 1rem 3rem 1rem;
 }
 
 button {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
-    padding: 0.75rem;
+    letter-spacing: 0.075rem;
+    padding: 0.75rem 1rem;
     border: 2px solid green;
     border-radius: 100px;
     margin: 1rem;
+}
+
+@media screen and (max-width: 30em) {
+    .buttons {
+        margin: 1rem 0.75rem;
+    }
+
+    button {
+        font-size: 0.75rem;
+        padding: 0.375rem 0.625rem;
+        letter-spacing: 0.0625rem;
+        margin: 1rem 0.5rem 3.5rem 0.5rem;
+    }
+
+    input {
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    }
+
+    .total {
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 2rem 1rem 1rem 1rem;
+        text-align: center;
+    }
 }
