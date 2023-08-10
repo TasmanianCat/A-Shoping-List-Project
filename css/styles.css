@@ -21,19 +21,42 @@ form {
     box-sizing: border-box;
 }
 
+.item-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    width: 100%;
+}
+
+.col-1 {
+    width: 50%;
+}
+
+.col-2 {
+    width: 25%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
 .for-name {
     display: block;
     width: 100%;
     color: cadetblue;
 }
 
-.item, input, .total {
+input,
+.total {
     font-size: 1.2rem;
     margin: 0.25rem 0rem;
 }
 
 input {
     border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .total {
