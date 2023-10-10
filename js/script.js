@@ -19,7 +19,7 @@ function calculateTotals() {
         totalMoney += itemPrice * itemQuantity;
     }
 
-    totalQuantityElement.textContent = totalQuantity;
+    totalQuantityElement.textContent = totalQuantity.toFixed(2);
     totalMoneyElement.textContent = totalMoney.toFixed(2); // Display total money with 2 decimal places
 }
 
