@@ -12,7 +12,7 @@ function calculateTotals() {
     let totalMoney = 0;
 
     for (let i = 1; i <= 12; i++) {
-        const itemQuantity = parseInt(document.getElementById('q' + i).value) || 0;
+        const itemQuantity = parseFloat(document.getElementById('q' + i).value) || 0;
         const itemPrice = parseFloat(document.getElementById('i' + i).value) || 0;
 
         totalQuantity += itemQuantity;
@@ -26,7 +26,7 @@ function calculateTotals() {
 // RESET VALUES
 function resetForm() {
     totalMoneyElement.textContent = '0.00';
-    totalQuantityElement.textContent = '0';
+    totalQuantityElement.textContent = '0.00';
 
     for (let i = 1; i <= 12; i++) {
         document.getElementById('i' + i).value = '';
