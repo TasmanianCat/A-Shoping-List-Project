@@ -31,7 +31,7 @@ function resetForm() {
     for (let i = 1; i <= 12; i++) {
         document.getElementById('i' + i).value = '';
         document.getElementById('q' + i).value = '';
-        document.querySelectorAll('[name="name-1"], [name="name-2"], [name="name-3"], [name="name-4"]').forEach(element => {
+        document.querySelectorAll('[name="name-1"], [name="name-2"], [name="name-3"], [name="name-4"], [name="name-5"], [name="name-6"], [name="name-7"], [name="name-8"], [name="name-9"], [name="name-10"], [name="name-11"], [name="name-12"]').forEach(element => {
             element.value = '';
         });
 
